@@ -119,6 +119,8 @@ class InverterEquipmentRegister(Enum):
     ShutdownTime = Register(32093, 2, datatypes.DataType.UINT32_BE, 1, None, AccessType.RO, None)
     AccumulatedEnergyYield = Register(32106, 2, datatypes.DataType.UINT32_BE, 100, "kWh", AccessType.RO, None)
     DailyEnergyYield = Register(32114, 2, datatypes.DataType.UINT32_BE, 100, "kWh", AccessType.RO, None)
+    MPPT1EnergyYield = Register(32122, 2, datatypes.DataType.UINT32_BE, 100, "kWh", AccessType.RO, None)
+    MPPT2EnergyYield = Register(32124, 2, datatypes.DataType.UINT32_BE, 100, "kWh", AccessType.RO, None)
     ActiveAdjustmentMode = Register(35300, 1, datatypes.DataType.UINT16_BE, 1, None, AccessType.RO, None)
     ActiveAdjustmentValue = Register(35302, 2, datatypes.DataType.UINT32_BE, 1, None, AccessType.RO, None)
     ActiveAdjustmentCommand = Register(35303, 1, datatypes.DataType.UINT16_BE, 1, None, AccessType.RO, None)
